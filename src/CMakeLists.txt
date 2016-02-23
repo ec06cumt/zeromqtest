@@ -1,0 +1,9 @@
+#Author:Gliu
+#Created:2015/12/02
+
+SET(SRC_LIST main.c)
+
+ADD_EXECUTABLE(${MAIN_EXE} ${SRC_LIST})
+INCLUDE_DIRECTORIES(/tmp/include/hello)
+TARGET_LINK_LIBRARIES(${MAIN_EXE} /tmp/lib/libhello2.so)
+#SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
