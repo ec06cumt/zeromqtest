@@ -47,7 +47,6 @@ int main(int argc,char* *argv)
 
       if(zmq_recv(pSock,szMsg,sizeof(szMsg),0) < 0)
       {
-	
         continue;
       }
 
